@@ -4,12 +4,12 @@ import "./styles/Perfil.css";
 
 export default class Perfil extends Component {
   render() {
-    const email = this.props.email;
+    const { description, info } = this.props;
     return (
       <div className="perfil">
         <img src="https://placeimg.com/192/192/people" alt="" />
-        <span>My email address is</span>
-        <h2>{email}</h2>
+        <span>{description}</span>
+        <h2>{info}</h2>
       </div>
     );
   }

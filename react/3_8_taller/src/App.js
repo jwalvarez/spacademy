@@ -43,6 +43,8 @@ function App() {
     info: "Información aqui",
   });
 
+  const [counter, setCounter] = useState(0);
+
   const { description, info } = perfilInfo;
 
   return (

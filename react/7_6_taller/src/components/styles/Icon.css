@@ -1,0 +1,14 @@
+.icon{
+  position: relative;
+  top: -100px;
+  border-top: solid transparent 4px;
+  padding: 10px 10px;
+  margin: 0px 10px;
+  color: grey;
+  cursor: pointer;
+}
+
+.icon:hover{
+  border-top: solid green 4px;
+  color: green;
+}

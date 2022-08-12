@@ -70,15 +70,24 @@ function App() {
   }, []);
 
   return (
-    <div className="App">
-      <div className="perfil-container"></div>
-      <Perfil description={description} info={info} data={data} />
-      {icons.map((icon, index) => {
-        return (
-          <Icon setPerfilInfo={setPerfilInfo} key={index} iconObj={icon} />
-        );
-      })}
-    </div>
+    <>
+      <div className="main-container">
+        <h1>RANDOM USER GENERATOR</h1>
+        <h2>
+          Descubre personas random de forma rapida, usando la api pública{" "}
+          <a href="https://randomuser.me/api/">random user</a>{" "}
+        </h2>
+      </div>
+      <div className="App">
+        <div className="perfil-container"></div>
+        <Perfil description={description} info={info} data={data} />
+        {icons.map((icon, index) => {
+          return (
+            <Icon setPerfilInfo={setPerfilInfo} key={index} iconObj={icon} />
+          );
+        })}
+      </div>
+    </>
   );
 }
 

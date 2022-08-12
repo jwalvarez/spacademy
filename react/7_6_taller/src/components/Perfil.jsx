@@ -7,9 +7,11 @@ export default class Perfil extends Component {
     const { description, info, data } = this.props;
     return (
       <div className="perfil">
-        <img src={data["picture"]} alt="" />
-        <span>{description}</span>
-        <h2>{data[info] || "Seleccione una opción"}</h2>
+        <div className="perfil-info">
+          <img src={data["picture"]} alt="" />
+          <span>{description}</span>
+          <h2>{data[info] || "Seleccione una opción"}</h2>
+        </div>
       </div>
     );
   }
